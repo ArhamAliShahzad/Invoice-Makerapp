@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.maindiv {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Right Side Box - Bill Box */
+.right-side {
+  width: 40vw;
+  height: 35vw;
+  padding: 30px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  position: sticky;
+  top: 10px;
+  transition: height 0.3s ease;
+  overflow-y: auto;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.total-amount {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.personaldiv {
+  width: 40vw;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  transition: height 0.3s ease;
+}
+
+.customerdiv {
+  width: 40vw;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  transition: height 0.3s ease;
+}
+
+.bildata {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #45A049, #1B5E20);
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}

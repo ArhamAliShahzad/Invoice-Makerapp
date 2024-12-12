@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+  <title>SwiftInvoicer Created By Arham Ali Shahzasd</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="maindiv">
+    <!-- Left Side: Personal Information and Customer Order -->
+    <div class="left-side">
+      <!-- Personal Information -->
+      <div class="personaldiv personal-info-section">
+        <h1>Personal Information</h1>
+        <label for="fullname">Full Name:</label>
+        <input id="fullname" name="FullName" type="text" placeholder="Enter Name" />
+        <label for="table-no">Table No:</label>
+        <input id="table-no" name="TableNo" type="text" placeholder="Enter Table No Here" />
+        <label for="transaction-method">Transaction Method:</label>
+        <select id="transaction-method" name="TransactionMethod">
+          <option value="cash"></option>
+          <option value="cash">Cash By Hand</option>
+          <option value="jazzcash">JazzCash</option>
+          <option value="easypaisa">EasyPaisa</option>
+          <option value="till-id">Till ID</option>
+          <option value="bank-account">Bank Account</option>
+        </select>
+      </div>
+      <!-- Customer Order -->
+      <div class="customerdiv">
+        <div class="item">
+          <label for="coffee">Coffee (RS:150)</label>
+          <input type="number" id="coffee" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="chai">Chai (RS:60)</label>
+          <input type="number" id="chai" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="samosa">Samosa (RS:50)</label>
+          <input type="number" id="samosa" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="icecream">Ice Cream (RS:450)</label>
+          <input type="number" id="icecream" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="zingerburger">Zinger Burger (RS:250)</label>
+          <input type="number" id="zingerburger" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="zingershawarma">Zinger Shawarma (RS:250)</label>
+          <input type="number" id="zingershawarma" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="chickencheese">Chicken Cheese Shawarma/Burger (RS:350)</label>
+          <input type="number" id="chickencheese" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="frieswithspecialsauce">Fries with Special Sauce (RS:200)</label>
+          <input type="number" id="frieswithspecialsauce" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="pasta">Pasta (RS:600)</label>
+          <input type="number" id="pasta" placeholder="Quantity" />
+        </div>
+        <div class="item">
+          <label for="dipsauce">Dip Sauce (RS:40)</label>
+          <input type="number" id="dipsauce" placeholder="Quantity" />
+        </div>
+      </div>
+    </div>
+    <!-- Right Side: Bill Box -->
+    <div class="right-side">
+      <h1>Your Bill</h1>
+      <h3 class="bildata">Your Name:<span id="customer-name"></span></h3>
+      <h3 class="bildata">Table NO:<span id="customer-table"></span></h3>
+      <h3 class="bildata">
+        Transaction-Method:<span id="transaction-method2"></span>
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Menu</th>
+            <th>Price (RS)</th>
+            <th>Quantity</th>
+            <th>Amount (RS)</th>
+            <!-- <th>Payment Method</th> -->
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <div class="totalammountcontainer">
+        <p class="total-amount">Total Amount: RS <span id="amount">0</span></p>
+      </div>
+      <div class="btn-container">
+        <button class="btn" onclick="printBill()">Print Bill</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
