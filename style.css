@@ -14,7 +14,7 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
 }
 
@@ -81,7 +81,6 @@ th {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 20px;
 }
 
 .personaldiv {
@@ -134,4 +133,25 @@ th {
 .btn-container {
   display: flex;
   justify-content: flex-end;
+}
+
+.total-bill{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoice-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 30px;
+}
+.right-side h1, .personaldiv h1 {
+  background-color: #4caf50;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
 }
